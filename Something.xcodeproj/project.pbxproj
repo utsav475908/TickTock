@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1854A70C1DDCC6F900A8F2A2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854A70A1DDCC6F900A8F2A2 /* HealthKit.framework */; };
+		1854A70D1DDCC6F900A8F2A2 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854A70B1DDCC6F900A8F2A2 /* HealthKitUI.framework */; };
 		18FC36FA1DD701B900AA71C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC36F91DD701B900AA71C7 /* AppDelegate.swift */; };
 		18FC36FC1DD701B900AA71C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC36FB1DD701B900AA71C7 /* ViewController.swift */; };
 		18FC36FF1DD701B900AA71C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FC36FD1DD701B900AA71C7 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		18FC37041DD701B900AA71C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FC37021DD701B900AA71C7 /* LaunchScreen.storyboard */; };
 		18FC370F1DD701B900AA71C7 /* SomethingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC370E1DD701B900AA71C7 /* SomethingTests.swift */; };
 		18FC371A1DD701B900AA71C7 /* SomethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC37191DD701B900AA71C7 /* SomethingUITests.swift */; };
+		18FC37281DD701CC00AA71C7 /* Yes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC37271DD701CC00AA71C7 /* Yes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1854A70A1DDCC6F900A8F2A2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1854A70B1DDCC6F900A8F2A2 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
 		18FC36F61DD701B900AA71C7 /* Something.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Something.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FC36F91DD701B900AA71C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FC36FB1DD701B900AA71C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		18FC37151DD701B900AA71C7 /* SomethingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomethingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FC37191DD701B900AA71C7 /* SomethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingUITests.swift; sourceTree = "<group>"; };
 		18FC371B1DD701B900AA71C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FC37271DD701CC00AA71C7 /* Yes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1854A70C1DDCC6F900A8F2A2 /* HealthKit.framework in Frameworks */,
+				1854A70D1DDCC6F900A8F2A2 /* HealthKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1854A7091DDCC6F900A8F2A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1854A70A1DDCC6F900A8F2A2 /* HealthKit.framework */,
+				1854A70B1DDCC6F900A8F2A2 /* HealthKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18FC36ED1DD701B900AA71C7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 				18FC370D1DD701B900AA71C7 /* SomethingTests */,
 				18FC37181DD701B900AA71C7 /* SomethingUITests */,
 				18FC36F71DD701B900AA71C7 /* Products */,
+				1854A7091DDCC6F900A8F2A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +117,7 @@
 			children = (
 				18FC36F91DD701B900AA71C7 /* AppDelegate.swift */,
 				18FC36FB1DD701B900AA71C7 /* ViewController.swift */,
+				18FC37271DD701CC00AA71C7 /* Yes.swift */,
 				18FC36FD1DD701B900AA71C7 /* Main.storyboard */,
 				18FC37001DD701B900AA71C7 /* Assets.xcassets */,
 				18FC37021DD701B900AA71C7 /* LaunchScreen.storyboard */,
@@ -260,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FC36FC1DD701B900AA71C7 /* ViewController.swift in Sources */,
+				18FC37281DD701CC00AA71C7 /* Yes.swift in Sources */,
 				18FC36FA1DD701B900AA71C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +525,7 @@
 				18FC37201DD701B900AA71C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18FC37211DD701B900AA71C7 /* Build configuration list for PBXNativeTarget "SomethingTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				18FC37231DD701B900AA71C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18FC37241DD701B900AA71C7 /* Build configuration list for PBXNativeTarget "SomethingUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				18FC37261DD701B900AA71C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
