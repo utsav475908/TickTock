@@ -15,6 +15,10 @@
 		181C8BE81DE600560018F5F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181C8BE61DE600560018F5F0 /* LaunchScreen.storyboard */; };
 		181C8BF31DE600560018F5F0 /* CrapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8BF21DE600560018F5F0 /* CrapTests.m */; };
 		181C8BFE1DE600560018F5F0 /* CrapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8BFD1DE600560018F5F0 /* CrapUITests.m */; };
+		181C8D211DE60CFB0018F5F0 /* IACClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D191DE60CFB0018F5F0 /* IACClient.m */; };
+		181C8D221DE60CFB0018F5F0 /* IACManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D1C1DE60CFB0018F5F0 /* IACManager.m */; };
+		181C8D231DE60CFB0018F5F0 /* IACRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D1E1DE60CFB0018F5F0 /* IACRequest.m */; };
+		181C8D241DE60CFB0018F5F0 /* NSString+IACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D201DE60CFB0018F5F0 /* NSString+IACExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		181C8BF91DE600560018F5F0 /* CrapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181C8BFD1DE600560018F5F0 /* CrapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrapUITests.m; sourceTree = "<group>"; };
 		181C8BFF1DE600560018F5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181C8D181DE60CFB0018F5F0 /* IACClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACClient.h; sourceTree = "<group>"; };
+		181C8D191DE60CFB0018F5F0 /* IACClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACClient.m; sourceTree = "<group>"; };
+		181C8D1A1DE60CFB0018F5F0 /* IACDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDelegate.h; sourceTree = "<group>"; };
+		181C8D1B1DE60CFB0018F5F0 /* IACManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACManager.h; sourceTree = "<group>"; };
+		181C8D1C1DE60CFB0018F5F0 /* IACManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACManager.m; sourceTree = "<group>"; };
+		181C8D1D1DE60CFB0018F5F0 /* IACRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACRequest.h; sourceTree = "<group>"; };
+		181C8D1E1DE60CFB0018F5F0 /* IACRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACRequest.m; sourceTree = "<group>"; };
+		181C8D1F1DE60CFB0018F5F0 /* NSString+IACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IACExtensions.h"; sourceTree = "<group>"; };
+		181C8D201DE60CFB0018F5F0 /* NSString+IACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IACExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 		181C8BD71DE600560018F5F0 /* Crap */ = {
 			isa = PBXGroup;
 			children = (
+				181C8D251DE60D060018F5F0 /* IAC */,
 				181C8BDB1DE600560018F5F0 /* AppDelegate.h */,
 				181C8BDC1DE600560018F5F0 /* AppDelegate.m */,
 				181C8BDE1DE600560018F5F0 /* ViewController.h */,
@@ -138,6 +152,22 @@
 				181C8BFF1DE600560018F5F0 /* Info.plist */,
 			);
 			path = CrapUITests;
+			sourceTree = "<group>";
+		};
+		181C8D251DE60D060018F5F0 /* IAC */ = {
+			isa = PBXGroup;
+			children = (
+				181C8D181DE60CFB0018F5F0 /* IACClient.h */,
+				181C8D191DE60CFB0018F5F0 /* IACClient.m */,
+				181C8D1A1DE60CFB0018F5F0 /* IACDelegate.h */,
+				181C8D1B1DE60CFB0018F5F0 /* IACManager.h */,
+				181C8D1C1DE60CFB0018F5F0 /* IACManager.m */,
+				181C8D1D1DE60CFB0018F5F0 /* IACRequest.h */,
+				181C8D1E1DE60CFB0018F5F0 /* IACRequest.m */,
+				181C8D1F1DE60CFB0018F5F0 /* NSString+IACExtensions.h */,
+				181C8D201DE60CFB0018F5F0 /* NSString+IACExtensions.m */,
+			);
+			name = IAC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +306,10 @@
 			files = (
 				181C8BE01DE600560018F5F0 /* ViewController.m in Sources */,
 				181C8BDD1DE600560018F5F0 /* AppDelegate.m in Sources */,
+				181C8D211DE60CFB0018F5F0 /* IACClient.m in Sources */,
+				181C8D231DE60CFB0018F5F0 /* IACRequest.m in Sources */,
+				181C8D241DE60CFB0018F5F0 /* NSString+IACExtensions.m in Sources */,
+				181C8D221DE60CFB0018F5F0 /* IACManager.m in Sources */,
 				181C8BDA1DE600560018F5F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

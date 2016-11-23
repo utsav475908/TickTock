@@ -17,6 +17,10 @@
 		181C8C2E1DE600D50018F5F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181C8C2C1DE600D50018F5F0 /* LaunchScreen.storyboard */; };
 		181C8C391DE600D50018F5F0 /* RussianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8C381DE600D50018F5F0 /* RussianTests.m */; };
 		181C8C441DE600D50018F5F0 /* RussianUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8C431DE600D50018F5F0 /* RussianUITests.m */; };
+		181C8D2F1DE60D170018F5F0 /* IACClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D271DE60D170018F5F0 /* IACClient.m */; };
+		181C8D301DE60D170018F5F0 /* IACManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D2A1DE60D170018F5F0 /* IACManager.m */; };
+		181C8D311DE60D170018F5F0 /* IACRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D2C1DE60D170018F5F0 /* IACRequest.m */; };
+		181C8D321DE60D170018F5F0 /* NSString+IACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C8D2E1DE60D170018F5F0 /* NSString+IACExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,15 @@
 		181C8C3F1DE600D50018F5F0 /* RussianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181C8C431DE600D50018F5F0 /* RussianUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianUITests.m; sourceTree = "<group>"; };
 		181C8C451DE600D50018F5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181C8D261DE60D170018F5F0 /* IACClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACClient.h; sourceTree = "<group>"; };
+		181C8D271DE60D170018F5F0 /* IACClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACClient.m; sourceTree = "<group>"; };
+		181C8D281DE60D170018F5F0 /* IACDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDelegate.h; sourceTree = "<group>"; };
+		181C8D291DE60D170018F5F0 /* IACManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACManager.h; sourceTree = "<group>"; };
+		181C8D2A1DE60D170018F5F0 /* IACManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACManager.m; sourceTree = "<group>"; };
+		181C8D2B1DE60D170018F5F0 /* IACRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACRequest.h; sourceTree = "<group>"; };
+		181C8D2C1DE60D170018F5F0 /* IACRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACRequest.m; sourceTree = "<group>"; };
+		181C8D2D1DE60D170018F5F0 /* NSString+IACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IACExtensions.h"; sourceTree = "<group>"; };
+		181C8D2E1DE60D170018F5F0 /* NSString+IACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IACExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,7 @@
 		181C8C171DE600D50018F5F0 /* Russian */ = {
 			isa = PBXGroup;
 			children = (
+				181C8D331DE60D1F0018F5F0 /* RussianIAC */,
 				181C8C1B1DE600D50018F5F0 /* PageAppDelegate.h */,
 				181C8C1C1DE600D50018F5F0 /* PageAppDelegate.m */,
 				181C8C1E1DE600D50018F5F0 /* RootViewController.h */,
@@ -148,6 +162,22 @@
 				181C8C451DE600D50018F5F0 /* Info.plist */,
 			);
 			path = RussianUITests;
+			sourceTree = "<group>";
+		};
+		181C8D331DE60D1F0018F5F0 /* RussianIAC */ = {
+			isa = PBXGroup;
+			children = (
+				181C8D261DE60D170018F5F0 /* IACClient.h */,
+				181C8D271DE60D170018F5F0 /* IACClient.m */,
+				181C8D281DE60D170018F5F0 /* IACDelegate.h */,
+				181C8D291DE60D170018F5F0 /* IACManager.h */,
+				181C8D2A1DE60D170018F5F0 /* IACManager.m */,
+				181C8D2B1DE60D170018F5F0 /* IACRequest.h */,
+				181C8D2C1DE60D170018F5F0 /* IACRequest.m */,
+				181C8D2D1DE60D170018F5F0 /* NSString+IACExtensions.h */,
+				181C8D2E1DE60D170018F5F0 /* NSString+IACExtensions.m */,
+			);
+			name = RussianIAC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +318,10 @@
 				181C8C1D1DE600D50018F5F0 /* PageAppDelegate.m in Sources */,
 				181C8C261DE600D50018F5F0 /* ModelController.m in Sources */,
 				181C8C1A1DE600D50018F5F0 /* main.m in Sources */,
+				181C8D301DE60D170018F5F0 /* IACManager.m in Sources */,
+				181C8D311DE60D170018F5F0 /* IACRequest.m in Sources */,
+				181C8D2F1DE60D170018F5F0 /* IACClient.m in Sources */,
+				181C8D321DE60D170018F5F0 /* NSString+IACExtensions.m in Sources */,
 				181C8C201DE600D50018F5F0 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
